@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculatorBody">
+            <div class="display"><input type="text" id="display"></div>
+            <div>
+                <table class="rowGap">
+                    <tr>
+                        <td class="btnGap">
+                            <input class="inputBtn btnColor1" type="button" value="C" onclick="reset()">
+                            <input class="inputBtn btnColor1" type="button" value="(" onclick="calculate('(')">
+                            <input class="inputBtn btnColor1" type="button" value=")" onclick="calculate(')')">
+                            <input class="inputBtn btnColor2" type="button" value="/" onclick="calculate('/')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="btnGap">
+                            <input class="inputBtn btnColor3" type="button" value="7" onclick="calculate('7')">
+                            <input class="inputBtn btnColor3" type="button" value="8" onclick="calculate('8')">
+                            <input class="inputBtn btnColor3" type="button" value="9" onclick="calculate('9')">
+                            <input class="inputBtn btnColor2" type="button" value="*" onclick="calculate('*')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="btnGap">
+                            <input class="inputBtn btnColor3" type="button" value="4" onclick="calculate('4')">
+                            <input class="inputBtn btnColor3" type="button" value="5" onclick="calculate('5')">
+                            <input class="inputBtn btnColor3" type="button" value="6" onclick="calculate('6')">
+                            <input class="inputBtn btnColor2" type="button" value="-" onclick="calculate('-')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="btnGap">
+                            <input class="inputBtn btnColor3" type="button" value="1" onclick="calculate('1')">
+                            <input class="inputBtn btnColor3" type="button" value="2" onclick="calculate('2')">
+                            <input class="inputBtn btnColor3" type="button" value="3" onclick="calculate('3')">
+                            <input class="inputBtn btnColor2" type="button" value="+" onclick="calculate('+')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="btnGap">
+                            <input class="inputBtn btnColor3" type="button" value="0" onclick="calculate('0')">
+                            <input class="inputBtn btnColor3" type="button" value="." onclick="calculate('.')">
+                            <input class="inputBtn btnColor3" type="button" value="">
+                            <input class="inputBtn btnColor2" type="button" value="=" onclick="answer()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Anupam Invent. All rights reserved.</p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
